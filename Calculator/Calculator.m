@@ -15,7 +15,7 @@
 -(id) init {
     self = [super init];
     if (self) {
-        self.number = [NSNumber numberWithInt:0];
+        [self clear];
     }
     return self;
 }
@@ -28,6 +28,10 @@
     if ([[newNumber description] length] <= 8) {
         self.number = newNumber;
     }
+}
+
+-(void) clear {
+    self.number = [NSNumber numberWithInt:0];
 }
 
 -(NSString*) description {

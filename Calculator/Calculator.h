@@ -13,5 +13,6 @@
 @property (nonatomic, retain) NSNumber* number;
 
 -(void) pressNumber:(NSInteger)theNumber;
+-(void) clear;
 
 @end

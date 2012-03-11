@@ -15,5 +15,6 @@
 @property (nonatomic, retain) Calculator* calculator;
 
 - (IBAction)numberPressed:(id)sender;
+- (IBAction)clearPressed:(id)sender;
 
 @end

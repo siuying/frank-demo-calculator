@@ -42,4 +42,9 @@
     self.labelDisplay.text = [self.calculator description];
 }
 
+- (IBAction)clearPressed:(id)sender {
+    [self.calculator clear];
+    self.labelDisplay.text = [self.calculator description];
+}
+
 @end

@@ -20,8 +20,7 @@ Feature:
     When I press "7" button
     When I press "8" button
     Then I see "12345678" on the display
-    
-  @wip
+
   Scenario: Max number length is 8
     Given I launch the app
     When I press "1" button
@@ -34,5 +33,12 @@ Feature:
     When I press "8" button
     When I press "9" button
     Then I see "12345678" on the display
-    
-  
+
+  Scenario: Clear button
+    Given I launch the app
+    When I press "1" button
+    When I press "2" button
+    When I press "3" button
+    Then I see "123" on the display
+    When I press "C" button  
+    Then I see "0" on the display
