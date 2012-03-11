@@ -14,21 +14,32 @@
 
 @implementation ViewController
 
+@synthesize labelDisplay;
+@synthesize calculator;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+	self.calculator = [[Calculator alloc] init];
+    self.labelDisplay.text = [self.calculator description];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
+    self.calculator = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (IBAction)numberPressed:(id)sender {
+    UIButton* button = sender;
+    [self.calculator pressNumber:button.tag];
+    self.labelDisplay.text = [self.calculator description];
 }
 
 @end

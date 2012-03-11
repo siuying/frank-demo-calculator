@@ -27,6 +27,8 @@
 		54BD2ED1150C5B90000926AA /* libFrank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD2ECB150C5B90000926AA /* libFrank.a */; };
 		54BD2ED2150C5B90000926AA /* libShelley.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD2ECC150C5B90000926AA /* libShelley.a */; };
 		54BD2ED4150C5BF8000926AA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD2ED3150C5BF8000926AA /* CFNetwork.framework */; };
+		54BD2ED7150C5F96000926AA /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD2ED6150C5F96000926AA /* Calculator.m */; };
+		54BD2ED8150C5F96000926AA /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD2ED6150C5F96000926AA /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		54BD2ECB150C5B90000926AA /* libFrank.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFrank.a; sourceTree = "<group>"; };
 		54BD2ECC150C5B90000926AA /* libShelley.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libShelley.a; sourceTree = "<group>"; };
 		54BD2ED3150C5BF8000926AA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		54BD2ED5150C5F96000926AA /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		54BD2ED6150C5F96000926AA /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				54BD2EA6150C58A9000926AA /* ViewController.h */,
 				54BD2EA7150C58A9000926AA /* ViewController.m */,
 				54BD2EA9150C58A9000926AA /* ViewController.xib */,
+				54BD2ED5150C5F96000926AA /* Calculator.h */,
+				54BD2ED6150C5F96000926AA /* Calculator.m */,
 				54BD2E9B150C58A9000926AA /* Supporting Files */,
 			);
 			path = Calculator;
@@ -236,6 +242,7 @@
 				54BD2EA1150C58A9000926AA /* main.m in Sources */,
 				54BD2EA5150C58A9000926AA /* AppDelegate.m in Sources */,
 				54BD2EA8150C58A9000926AA /* ViewController.m in Sources */,
+				54BD2ED7150C5F96000926AA /* Calculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +253,7 @@
 				54BD2EB3150C5B67000926AA /* main.m in Sources */,
 				54BD2EB4150C5B67000926AA /* AppDelegate.m in Sources */,
 				54BD2EB5150C5B67000926AA /* ViewController.m in Sources */,
+				54BD2ED8150C5F96000926AA /* Calculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

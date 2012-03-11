@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Calculator.h"
 
 @interface ViewController : UIViewController
+
+@property (nonatomic, retain) IBOutlet UILabel* labelDisplay;
+@property (nonatomic, retain) Calculator* calculator;
+
+- (IBAction)numberPressed:(id)sender;
 
 @end
