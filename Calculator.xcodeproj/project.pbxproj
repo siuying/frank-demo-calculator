@@ -15,6 +15,18 @@
 		54BD2EA5150C58A9000926AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD2EA4150C58A9000926AA /* AppDelegate.m */; };
 		54BD2EA8150C58A9000926AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD2EA7150C58A9000926AA /* ViewController.m */; };
 		54BD2EAB150C58A9000926AA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54BD2EA9150C58A9000926AA /* ViewController.xib */; };
+		54BD2EB3150C5B67000926AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD2EA0150C58A9000926AA /* main.m */; };
+		54BD2EB4150C5B67000926AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD2EA4150C58A9000926AA /* AppDelegate.m */; };
+		54BD2EB5150C5B67000926AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD2EA7150C58A9000926AA /* ViewController.m */; };
+		54BD2EB7150C5B67000926AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD2E94150C58A9000926AA /* UIKit.framework */; };
+		54BD2EB8150C5B67000926AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD2E96150C58A9000926AA /* Foundation.framework */; };
+		54BD2EB9150C5B67000926AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD2E98150C58A9000926AA /* CoreGraphics.framework */; };
+		54BD2EBB150C5B67000926AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54BD2E9D150C58A9000926AA /* InfoPlist.strings */; };
+		54BD2EBC150C5B67000926AA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54BD2EA9150C58A9000926AA /* ViewController.xib */; };
+		54BD2ED0150C5B90000926AA /* frank_static_resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54BD2ECA150C5B90000926AA /* frank_static_resources.bundle */; };
+		54BD2ED1150C5B90000926AA /* libFrank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD2ECB150C5B90000926AA /* libFrank.a */; };
+		54BD2ED2150C5B90000926AA /* libShelley.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD2ECC150C5B90000926AA /* libShelley.a */; };
+		54BD2ED4150C5BF8000926AA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD2ED3150C5BF8000926AA /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +43,12 @@
 		54BD2EA6150C58A9000926AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		54BD2EA7150C58A9000926AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		54BD2EAA150C58A9000926AA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		54BD2EC0150C5B67000926AA /* Calculator Frankified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator Frankified.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BD2EC2150C5B68000926AA /* Calculator Frankified-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Calculator Frankified-Info.plist"; path = "/Users/siuying/Documents/workspace/Calculator/Calculator Frankified-Info.plist"; sourceTree = "<absolute>"; };
+		54BD2ECA150C5B90000926AA /* frank_static_resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = frank_static_resources.bundle; sourceTree = "<group>"; };
+		54BD2ECB150C5B90000926AA /* libFrank.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFrank.a; sourceTree = "<group>"; };
+		54BD2ECC150C5B90000926AA /* libShelley.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libShelley.a; sourceTree = "<group>"; };
+		54BD2ED3150C5BF8000926AA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +62,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54BD2EB6150C5B67000926AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BD2ED4150C5BF8000926AA /* CFNetwork.framework in Frameworks */,
+				54BD2EB7150C5B67000926AA /* UIKit.framework in Frameworks */,
+				54BD2EB8150C5B67000926AA /* Foundation.framework in Frameworks */,
+				54BD2EB9150C5B67000926AA /* CoreGraphics.framework in Frameworks */,
+				54BD2ED1150C5B90000926AA /* libFrank.a in Frameworks */,
+				54BD2ED2150C5B90000926AA /* libShelley.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -51,8 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				54BD2E9A150C58A9000926AA /* Calculator */,
+				54BD2EC3150C5B90000926AA /* Frank */,
 				54BD2E93150C58A9000926AA /* Frameworks */,
 				54BD2E91150C58A9000926AA /* Products */,
+				54BD2EC2150C5B68000926AA /* Calculator Frankified-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				54BD2E90150C58A9000926AA /* Calculator.app */,
+				54BD2EC0150C5B67000926AA /* Calculator Frankified.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +101,7 @@
 		54BD2E93150C58A9000926AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54BD2ED3150C5BF8000926AA /* CFNetwork.framework */,
 				54BD2E94150C58A9000926AA /* UIKit.framework */,
 				54BD2E96150C58A9000926AA /* Foundation.framework */,
 				54BD2E98150C58A9000926AA /* CoreGraphics.framework */,
@@ -98,6 +133,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		54BD2EC3150C5B90000926AA /* Frank */ = {
+			isa = PBXGroup;
+			children = (
+				54BD2ECA150C5B90000926AA /* frank_static_resources.bundle */,
+				54BD2ECB150C5B90000926AA /* libFrank.a */,
+				54BD2ECC150C5B90000926AA /* libShelley.a */,
+			);
+			path = Frank;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,6 +161,23 @@
 			name = Calculator;
 			productName = Calculator;
 			productReference = 54BD2E90150C58A9000926AA /* Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54BD2EB1150C5B67000926AA /* Calculator Frankified */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BD2EBD150C5B67000926AA /* Build configuration list for PBXNativeTarget "Calculator Frankified" */;
+			buildPhases = (
+				54BD2EB2150C5B67000926AA /* Sources */,
+				54BD2EB6150C5B67000926AA /* Frameworks */,
+				54BD2EBA150C5B67000926AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Calculator Frankified";
+			productName = Calculator;
+			productReference = 54BD2EC0150C5B67000926AA /* Calculator Frankified.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				54BD2E8F150C58A8000926AA /* Calculator */,
+				54BD2EB1150C5B67000926AA /* Calculator Frankified */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +216,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54BD2EBA150C5B67000926AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BD2EBB150C5B67000926AA /* InfoPlist.strings in Resources */,
+				54BD2EBC150C5B67000926AA /* ViewController.xib in Resources */,
+				54BD2ED0150C5B90000926AA /* frank_static_resources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -163,6 +236,16 @@
 				54BD2EA1150C58A9000926AA /* main.m in Sources */,
 				54BD2EA5150C58A9000926AA /* AppDelegate.m in Sources */,
 				54BD2EA8150C58A9000926AA /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BD2EB2150C5B67000926AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BD2EB3150C5B67000926AA /* main.m in Sources */,
+				54BD2EB4150C5B67000926AA /* AppDelegate.m in Sources */,
+				54BD2EB5150C5B67000926AA /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +336,44 @@
 			};
 			name = Release;
 		};
+		54BD2EBE150C5B67000926AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Calculator/Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Calculator Frankified-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frank\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "Calculator Frankified";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		54BD2EBF150C5B67000926AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Calculator/Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Calculator Frankified-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frank\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "Calculator Frankified";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -270,6 +391,14 @@
 			buildConfigurations = (
 				54BD2EAF150C58A9000926AA /* Debug */,
 				54BD2EB0150C58A9000926AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54BD2EBD150C5B67000926AA /* Build configuration list for PBXNativeTarget "Calculator Frankified" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BD2EBE150C5B67000926AA /* Debug */,
+				54BD2EBF150C5B67000926AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
