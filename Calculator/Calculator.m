@@ -13,6 +13,7 @@
 @synthesize number;
 @synthesize memorizedNumber;
 @synthesize currentOperator;
+@synthesize error;
 
 -(id) init {
     self = [super init];
@@ -39,15 +40,29 @@
 
 -(void) pressOperator:(NSString*)theOp {
     self.currentOperator = theOp;
+    
+    NSLog(@"op = %@", theOp);
+    
 }
 
 -(void) calculate {
     if (self.currentOperator == nil || self.memorizedNumber == nil) {
         return;
     }
-    
+
     if ([self.currentOperator isEqualToString:@"+"]) {
         self.number = [NSNumber numberWithDouble:[self.memorizedNumber doubleValue] + [self.number doubleValue]];
+    } else if ([self.currentOperator isEqualToString:@"-"]) {
+        self.number = [NSNumber numberWithDouble:[self.memorizedNumber doubleValue] - [self.number doubleValue]];
+    } else if ([self.currentOperator isEqualToString:@"x"]) {
+        self.number = [NSNumber numberWithDouble:[self.memorizedNumber doubleValue] * [self.number doubleValue]];
+    } else if ([self.currentOperator isEqualToString:@"÷"]) {
+        if ([self.number doubleValue] == 0) {
+            self.error = YES;
+        } else {
+            self.number = [NSNumber numberWithDouble:[self.memorizedNumber doubleValue] / [self.number doubleValue]];        
+        }
+
     }
     
     self.memorizedNumber = nil;
@@ -55,14 +70,18 @@
 }
 
 -(void) clear {
+    self.error = NO;
     self.number = [NSNumber numberWithInt:0];
     self.currentOperator = nil;
     self.memorizedNumber = nil;
 }
 
 -(NSString*) description {
-    return [self.number description];
-    
+    if (error) {
+        return @"ERR";
+    } else {
+        return [self.number description];
+    }
 }
 
 -(void) dealloc {

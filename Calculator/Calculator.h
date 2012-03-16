@@ -13,6 +13,7 @@
 @property (nonatomic, retain) NSNumber* number;
 @property (nonatomic, retain) NSNumber* memorizedNumber;
 @property (nonatomic, retain) NSString* currentOperator;
+@property (nonatomic, assign) BOOL error;
 
 -(void) pressNumber:(NSInteger)theNumber;
 -(void) pressOperator:(NSString*)theOp;
