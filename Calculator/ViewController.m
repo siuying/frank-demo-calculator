@@ -47,4 +47,10 @@
     self.labelDisplay.text = [self.calculator description];
 }
 
+- (IBAction)operatorPressed:(id)sender {
+    UIButton* button = sender;
+    NSString* operator = [button titleLabel].text;
+    [self.calculator pressOperator:operator];
+}
+
 @end

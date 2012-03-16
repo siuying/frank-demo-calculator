@@ -11,6 +11,7 @@
 @implementation Calculator
 
 @synthesize number;
+@synthesize currentOperator;
 
 -(id) init {
     self = [super init];
@@ -28,6 +29,10 @@
     if ([[newNumber description] length] <= 8) {
         self.number = newNumber;
     }
+}
+
+-(void) pressOperator:(NSString*)theOp {
+    self.currentOperator = theOp;
 }
 
 -(void) clear {
