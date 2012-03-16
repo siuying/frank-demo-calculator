@@ -31,6 +31,7 @@ Feature:
     | 0       | x      | 40      | 0      |
     | 12345   | x      | 12      | 148140 |
 
+  @divide
   Scenario: Calculate Divide
     Given I launch the app
     Then I peform calculation:
