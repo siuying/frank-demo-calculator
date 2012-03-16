@@ -53,4 +53,9 @@
     [self.calculator pressOperator:operator];
 }
 
+- (IBAction)equalPressed:(id)sender {
+    [self.calculator calculate];
+    self.labelDisplay.text = [self.calculator description];
+}
+
 @end

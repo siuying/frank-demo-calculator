@@ -17,5 +17,6 @@
 - (IBAction)numberPressed:(id)sender;
 - (IBAction)clearPressed:(id)sender;
 - (IBAction)operatorPressed:(id)sender;
+- (IBAction)equalPressed:(id)sender;
 
 @end

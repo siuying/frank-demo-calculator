@@ -11,6 +11,7 @@
 @implementation Calculator
 
 @synthesize number;
+@synthesize memorizedNumber;
 @synthesize currentOperator;
 
 -(id) init {
@@ -22,6 +23,11 @@
 }
 
 -(void) pressNumber:(NSInteger)theNumber {
+    if (self.currentOperator != nil && self.memorizedNumber == nil) {
+        self.memorizedNumber = self.number;
+        self.number = [NSNumber numberWithInt:0];
+    }
+
     NSString* oldNumber = [self description];
     NSString* newNumberStr = [oldNumber stringByAppendingFormat:@"%d", theNumber];
     
@@ -35,12 +41,28 @@
     self.currentOperator = theOp;
 }
 
+-(void) calculate {
+    if (self.currentOperator == nil || self.memorizedNumber == nil) {
+        return;
+    }
+    
+    if ([self.currentOperator isEqualToString:@"+"]) {
+        self.number = [NSNumber numberWithDouble:[self.memorizedNumber doubleValue] + [self.number doubleValue]];
+    }
+    
+    self.memorizedNumber = nil;
+    self.currentOperator = nil;
+}
+
 -(void) clear {
     self.number = [NSNumber numberWithInt:0];
+    self.currentOperator = nil;
+    self.memorizedNumber = nil;
 }
 
 -(NSString*) description {
     return [self.number description];
+    
 }
 
 @end

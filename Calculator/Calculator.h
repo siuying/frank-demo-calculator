@@ -11,10 +11,12 @@
 @interface Calculator : NSObject
 
 @property (nonatomic, retain) NSNumber* number;
+@property (nonatomic, retain) NSNumber* memorizedNumber;
 @property (nonatomic, retain) NSString* currentOperator;
 
 -(void) pressNumber:(NSInteger)theNumber;
 -(void) pressOperator:(NSString*)theOp;
 -(void) clear;
+-(void) calculate;
 
 @end
