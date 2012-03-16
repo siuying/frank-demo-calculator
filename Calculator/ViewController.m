@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
+@interface ViewController (Private)
+-(void) refreshDisplay;
 @end
 
 @implementation ViewController
@@ -39,12 +39,12 @@
 - (IBAction)numberPressed:(id)sender {
     UIButton* button = sender;
     [self.calculator pressNumber:button.tag];
-    self.labelDisplay.text = [self.calculator description];
+    [self refreshDisplay];
 }
 
 - (IBAction)clearPressed:(id)sender {
     [self.calculator clear];
-    self.labelDisplay.text = [self.calculator description];
+    [self refreshDisplay];
 }
 
 - (IBAction)operatorPressed:(id)sender {
@@ -55,6 +55,12 @@
 
 - (IBAction)equalPressed:(id)sender {
     [self.calculator calculate];
+    [self refreshDisplay];
+}
+
+#pragma mark - Private
+
+-(void) refreshDisplay {
     self.labelDisplay.text = [self.calculator description];
 }
 

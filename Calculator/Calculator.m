@@ -65,4 +65,11 @@
     
 }
 
+-(void) dealloc {
+    self.number = nil;
+    self.currentOperator = nil;
+    self.memorizedNumber = nil;
+    [super dealloc];
+}
+
 @end

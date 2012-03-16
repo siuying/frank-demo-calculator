@@ -6,8 +6,10 @@ Feature:
 
   Scenario: Calculate Sum
     Given I launch the app
-    When I press "1" button
-    And I press "+" button
-    And I press "1" button
-    And I press "=" button
-    Then I see "2" on the display
+    Then I peform calculation:
+    | input_1 | button | input_2 | output |
+    | 20      | +      | 30      | 50     |
+    | 2       | +      | 5       | 7      |
+    | 0       | +      | 40      | 40     |
+    | 12345   | +      | 56789   | 69134  |
+  
